@@ -16,7 +16,7 @@ export default class ProvinciaApp extends Component {
                  provincia = {
                     provincia: form.provincia.value,
                  }
-                 axios.post(`Provincia`, {
+                 axios.post(`/Provincia`, {
                     provincia: provincia.provincia,
                   })
                 .then(res => {

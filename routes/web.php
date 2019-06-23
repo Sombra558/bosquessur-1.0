@@ -34,7 +34,7 @@ Route::group(['middleware' => 'admin'], function () {
     Route::resource('/Terreno','TerrenoController');
     Route::resource('/Casa','CasaController');
     Route::resource('/Comuna','ComunaController');
-    Route::resource('/ControlAdmin/Provincia','ProvinciaController');
+    Route::resource('/Provincia','ProvinciaController');
     Route::resource('/Region','RegionController');
     Route::get('/ControlAdmin/RegionContador', 'RegionController@RegionContador');
     Route::get('/ControlAdmin/ProvinciasContador', 'ProvinciaController@ProvinciasContador');

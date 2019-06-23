@@ -77458,7 +77458,7 @@ function (_Component) {
           provincia = {
         provincia: form.provincia.value
       };
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("Provincia", {
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/Provincia", {
         provincia: provincia.provincia
       }).then(function (res) {
         console.log(res);
