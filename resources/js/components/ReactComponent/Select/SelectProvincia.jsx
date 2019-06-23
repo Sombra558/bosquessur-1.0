@@ -14,7 +14,7 @@ import Select from 'react-select';
         this.handleChange = this.handleChange.bind(this)
       }
     componentDidMount(){
-        axios.get(`/ControlAdmin/Provincia`)
+        axios.get(`/Provincia`)
       .then(
         res => {
         const values = res.data;

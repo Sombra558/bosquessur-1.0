@@ -81633,7 +81633,7 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios.get("/ControlAdmin/Provincia").then(function (res) {
+      axios.get("/Provincia").then(function (res) {
         var values = res.data;
 
         _this2.setState({
