@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Provincia;
+use App\provincia;
 class ProvinciaController extends Controller
 {
     public function store(Request $request){

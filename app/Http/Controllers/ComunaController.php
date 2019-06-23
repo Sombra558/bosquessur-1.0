@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Comuna;
+use App\comuna;
 class ComunaController extends Controller
 {
     public function store(Request $request){
