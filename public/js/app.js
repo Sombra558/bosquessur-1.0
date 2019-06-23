@@ -77151,7 +77151,7 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("Provincia").then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/Provincia").then(function (res) {
         var provincias = res.data;
 
         _this2.setState({
@@ -77245,7 +77245,7 @@ function (_Component) {
         id: this.state.idprueba,
         provincia: form.provincia.value
       };
-      axios.put("/ControlAdmin/Provincia/".concat(this.state.provincia.id), {
+      axios.put("/Provincia/".concat(this.state.provincia.id), {
         id: provincia.id,
         provincia: provincia.provincia
       }).then(function (res) {
@@ -77349,7 +77349,7 @@ function (_Component) {
       var _this2 = this;
 
       ev.preventDefault();
-      var uri = "/ControlAdmin/Provincia/".concat(this.state.provincia.id);
+      var uri = "/Provincia/".concat(this.state.provincia.id);
       axios["delete"](uri).then(function (res) {
         var pasador = false;
         var provincia = res.data;

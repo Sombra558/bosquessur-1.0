@@ -14,7 +14,7 @@ export default class Provincia extends Component {
 
 handleSubmit(ev){
     ev.preventDefault();
-    let uri = `/ControlAdmin/Provincia/${this.state.provincia.id}`
+    let uri = `/Provincia/${this.state.provincia.id}`
     axios.delete(uri).then(
       res => {
         const pasador = false;

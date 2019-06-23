@@ -20,7 +20,7 @@ ActualizarProvincia(e){
       id: this.state.idprueba,
       provincia: form.provincia.value,
    }
-   axios.put(`/ControlAdmin/Provincia/${this.state.provincia.id}`, {
+   axios.put(`/Provincia/${this.state.provincia.id}`, {
       id: provincia.id,
       provincia: provincia.provincia,
     })
