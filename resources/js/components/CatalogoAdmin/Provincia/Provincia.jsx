@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class Provincia extends Component {
     constructor(...props) {
         super(...props)
@@ -28,6 +30,7 @@ ActualizarProvincia(e){
       console.log(res);
       console.log(res.data);
       this.setState({provincia});
+      toastr.warning('Provincia Actualizada Correctamente')
   })
    form.reset() 
 }

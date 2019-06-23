@@ -6,7 +6,7 @@ const RegionForm =(props) => (
     <div className="card-body">
     <form  onSubmit={props.onAddRegion}>
         <div className="form-group">
-        <input className="form-control" type="text" name="zona" placeholder="region" required/>
+        <input className="form-control" type="text" name="zona" placeholder="zona" required/>
         </div>
         <div className="form-group">
         <input className="form-control btn btn-primary" type="submit" value="Guardar"/>

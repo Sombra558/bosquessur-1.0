@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios'
-import ComunaForm from './ComunaForm'
+import axios from 'axios';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
+import ComunaForm from './ComunaForm';
 export default class ComunaApp extends Component {
     constructor(...props) {
         super(...props)
@@ -21,6 +23,7 @@ export default class ComunaApp extends Component {
                 .then(res => {
                     console.log(res);
                     console.log(res.data);
+                    toastr.success('Comuna creada de manera satisfactoria', 'Mensaje:')
                 })
                  this.setState({
                     comunas: this.state.comunas.concat([comuna])

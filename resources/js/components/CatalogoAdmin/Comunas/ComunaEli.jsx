@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class Comuna extends Component {
     constructor(...props) {
         super(...props)
@@ -21,6 +23,7 @@ handleSubmit(ev){
         const comuna  = res.data;
         this.setState({ comuna});
         this.setState({pasador});
+        toastr.error('Comuna Eliminada Correctamente', 'Mensaje')
         }
     );
   }

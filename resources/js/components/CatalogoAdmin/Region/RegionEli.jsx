@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class Region extends Component {
     constructor(...props) {
         super(...props)
@@ -21,6 +23,7 @@ handleSubmit(ev){
         const region  = res.data;
         this.setState({ region});
         this.setState({pasador});
+        toastr.error('Zona Eliminada Correctamente', 'Mensaje')
         }
     );
   }

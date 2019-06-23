@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class Terreno extends Component {
     constructor(...props) {
         super(...props)
@@ -56,6 +58,7 @@ ActualizarTerreno(e){
       console.log(res);
       console.log(res.data);
       this.setState({terreno});
+      toastr.warning('Terreno Actualizado correctamente')
   })
    form.reset() 
 }
@@ -68,6 +71,7 @@ EliminarTerreno(ev){
             const terreno  = res.data;
             this.setState({ terreno});
             this.setState({pasador});
+            toastr.error('Terreno Eliminado Correctamente', 'Mensaje')
             }
         );
       }
@@ -77,6 +81,7 @@ TerrenoVendido(op){
  }).then(res => {
         console.log(res);
         console.log(res.data);
+        toastr.success('Terreno Marcado Como Vendido', 'Mensaje')
     })
 }
 render()

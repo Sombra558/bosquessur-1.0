@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class Provincia extends Component {
     constructor(...props) {
         super(...props)
@@ -21,6 +23,7 @@ handleSubmit(ev){
         const provincia  = res.data;
         this.setState({ provincia});
         this.setState({pasador});
+        toastr.error('Provincia Eliminada Correctamente', 'Mensaje')
         }
     );
   }

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import SelectRegion from '../../ReactComponent/Select/SelectRegion';
 import SelectProvincia from '../../ReactComponent/Select/SelectProvincia';
 import SelectComuna from '../../ReactComponent/Select/SelectComuna';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class Terreno extends Component {
     constructor(...props) {
         super(...props)
@@ -46,6 +48,7 @@ ActualizarTerreno(e){
       console.log(res);
       console.log(res.data);
       this.setState({terreno});
+      toastr.warning('Ubicacion Actualizada correctamente')
   })
    form.reset() 
 }

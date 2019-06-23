@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import TerrenoForm from './TerrenoForm';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class TerrenoAdminApp extends Component {
     constructor(...props) {
         super(...props)
@@ -49,6 +51,7 @@ export default class TerrenoAdminApp extends Component {
         .then(res => {
             console.log(res);
             console.log(res.data);
+            toastr.success('Terreno creado de manera satisfactoria', 'Mensaje:')
         })
          this.setState({
             terrenos: this.state.terrenos.concat([terreno])

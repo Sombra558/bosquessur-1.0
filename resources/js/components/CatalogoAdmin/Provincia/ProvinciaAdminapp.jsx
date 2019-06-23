@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 import ProvinciaForm from './ProvinciaForm'
 export default class ProvinciaApp extends Component {
     constructor(...props) {
@@ -22,6 +24,7 @@ export default class ProvinciaApp extends Component {
                 .then(res => {
                     console.log(res);
                     console.log(res.data);
+                    toastr.success('Provincia creada de manera satisfactoria', 'Mensaje:')
                 })
                  this.setState({
                     provincias: this.state.provincias.concat([provincia])

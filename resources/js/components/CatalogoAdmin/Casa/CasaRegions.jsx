@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import SelectRegion from '../../ReactComponent/Select/SelectRegion';
 import SelectProvincia from '../../ReactComponent/Select/SelectProvincia';
 import SelectComuna from '../../ReactComponent/Select/SelectComuna';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class CasaRegions extends Component {
     constructor(...props) {
         super(...props)
@@ -47,6 +49,7 @@ ActualizarCasa(e){
       console.log(res);
       console.log(res.data);
       this.setState({casa});
+      toastr.warning('Ubicacion Actualizada correctamente')
   })
    form.reset() 
 }

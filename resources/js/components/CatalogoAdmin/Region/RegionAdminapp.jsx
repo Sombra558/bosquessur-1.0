@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios'
-import RegionForm from './RegionForm'
+import axios from 'axios';
+import RegionForm from './RegionForm';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class RegionApp extends Component {
     constructor(...props) {
         super(...props)
@@ -22,6 +24,7 @@ export default class RegionApp extends Component {
                 .then(res => {
                     console.log(res);
                     console.log(res.data);
+                    toastr.success('Zona creada de manera satisfactoria', 'Mensaje:')
                 })
                  this.setState({
                     regiones: this.state.regiones.concat([region])

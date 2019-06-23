@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import RegionesList from './ListEliminar';
+
 export default class DetallesProvincia extends Component {
     constructor(...props) {
         super(...props)

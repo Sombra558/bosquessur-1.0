@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class Casa extends Component {
     constructor(...props) {
         super(...props)
@@ -56,6 +58,7 @@ ActualizarCasa(e){
       console.log(res);
       console.log(res.data);
       this.setState({casa});
+      toastr.warning('Casa Actualizado correctamente')
   })
    form.reset() 
 }
@@ -68,6 +71,7 @@ EliminarCasa(ev){
             const casa  = res.data;
             this.setState({ casa});
             this.setState({pasador});
+            toastr.error('Casa Eliminada Correctamente', 'Mensaje')
             }
         );
       }
@@ -77,6 +81,7 @@ CasaVendido(op){
  }).then(res => {
         console.log(res);
         console.log(res.data);
+        toastr.success('Casa Marcada Como Vendida', 'Mensaje')
     })
 }
 render()

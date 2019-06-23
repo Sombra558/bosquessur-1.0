@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import CasaForm from './CasaForm';
+import toastr from "toastr";
+import "toastr/build/toastr.css";
 export default class TerrenoAdminApp extends Component {
     constructor(...props) {
         super(...props)
