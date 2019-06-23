@@ -9,7 +9,7 @@ export default class DetallesProvincia extends Component {
     }
 }
 componentDidMount(){
-    axios.get(`Provincia`)
+    axios.get(`/Provincia`)
       .then(
         res => {
         const provincias = res.data;

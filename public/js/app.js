@@ -77027,7 +77027,7 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("Provincia").then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/Provincia").then(function (res) {
         var provincias = res.data;
 
         _this2.setState({
