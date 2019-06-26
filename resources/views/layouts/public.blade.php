@@ -45,7 +45,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	    <link href="/css/responsive.css" rel="stylesheet" />
         <link rel="stylesheet" href="/css/minicarousel.css">
 	    <link href="/images/ico/icono.jpg" rel="shortcut icon" />
-      
+        <style>
+        </style>
     </head>
     <header class="navbar-inverse navbar-fixed-top" id="top-header">
 <div class="container-fluid">

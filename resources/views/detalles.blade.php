@@ -5,7 +5,7 @@
 <div class="row">
     <br>
       <div class="col-sm-12">
-               <h4 class="text-right margeneando1"> Zona:{{$terreno->zona}} / Provincia: {{$terreno->provincia}} / Comuna: {{$terreno->comuna}}</h4>
+               <h4 class="text-right margeneando1"> ZONA:{{$terreno->zona}} / PROVINCIA: {{$terreno->provincia}} / COMUNA: {{$terreno->comuna}}</h4>
       </div>
     <br>
     <br>
@@ -40,21 +40,27 @@
                             </li>
                             
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;"><i class="fas fa-dollar-sign col"></i> PRECIO: {{$terreno->precio}}$</span></div>
-                            </li>
-                            <li class="list-group-item">
-                                    <div style="padding-top: 8px;" class="text-center form-control btn btn-primary">CONTACTAR</div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PRECIO: {{$terreno->precio}}</span></div>
                             </li>
                     </ul>
+                    <div class="main-menu">
+                                <ul class="nav navbar-nav" id="nav">
+                                        <li  class="scroll">
+                                                <a class="btn btn-primary" data-section="#contact-area" href="#contact-area">Contactar</a>
+                                        </li>
+                                </ul>
+                    </div>
                 </div>
                 </div>
                 </div>
     </div>
     
-
+<br>
 </div>
-<div class="col-sm-12">
-               <h4 class="text-left"> UTM:{{$terreno->utm}} / Longitud: {{$terreno->longitud}} / Latitud: {{$terreno->latitud}}</h4>
+<div class="col-sm-8 well">
+        <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
+        <h5>UTM:{{$terreno->utm}}</h5>
+        <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span>LONGITUD: {{$terreno->longitud}}</span><span style="margin-left:35px;">LATITUD: {{$terreno->latitud}}</span></h5>
       </div>
 </div>
 @endsection

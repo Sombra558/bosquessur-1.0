@@ -7,9 +7,6 @@
       <div class="col-sm-12">
                <h4 class="text-right margeneando1"> Zona:{{$casa->zona}} / Provincia: {{$casa->provincia}} / Comuna: {{$casa->comuna}}</h4>
       </div>
-      <div class="col-sm-12">
-      <h4 class="text-left margeneando2" style="font-size:30px;"> <i class="fas fa-bed col">: {{$casa->habitaciones}}</i> -  <i class="fas fa-shower col">: {{$casa->banos}}</i></h4>
-      </div>
     <br>
     <br>
     <div class="row">
@@ -30,7 +27,7 @@
                 <div class="col-xs-12 col-sm-4">
                 <div class="col-xs-12 col-sm-12">
                 <div class="panel panel-default margeneando">
-                    <div class="panel-heading text-center" style="background-color:#222; color:#ffffff;"><strong>{{$casa->terreno}}</strong></div>
+                    <div class="panel-heading text-center" style="background-color:#222; color:#ffffff;"><strong>{{$casa->casa}}</strong></div>
             
                     <ul class="list-group">
                             <li class="list-group-item">
@@ -41,14 +38,23 @@
                                     </div>
                                     <p class="text-justify" style="font-size:15px;">{{$casa->descripcion}}</p>
                             </li>
-                            
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;"><i class="fas fa-dollar-sign col"></i> PRECIO: {{$casa->precio}}</span></div>
+                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-bed col"></i> DORMITORIOS:<p style="font-size:15px" class="text-left">{{$casa->habitaciones}}</p></span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div style="padding-top: 8px;" class="text-center form-control btn btn-primary">CONTACTAR</div>
+                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-shower col"></i> BAÑOS:<p style="font-size:15px" class="text-left">{{$casa->banos}}</p></span></div>
+                            </li>
+                            <li class="list-group-item">
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PRECIO: {{$casa->precio}}</span></div>
                             </li>
                     </ul>
+                    <div class="main-menu">
+                                <ul class="nav navbar-nav" id="nav">
+                                        <li  class="scroll">
+                                                <a class="btn btn-primary" data-section="#contact-area" href="#contact-area">Contactar</a>
+                                        </li>
+                                </ul>
+                    </div>
                 </div>
                 </div>
                 </div>
@@ -56,8 +62,10 @@
     
 
 </div>
-<div class="col-sm-12">
-               <h4 class="text-left"> UTM:{{$casa->utm}} / Longitud: {{$casa->longitud}} / Latitud: {{$casa->latitud}}</h4>
+<div class="col-sm-8 well">
+        <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
+        <h5>UTM:{{$casa->utm}}</h5>
+        <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span>LONGITUD: {{$casa->longitud}}</span><span style="margin-left:35px;">LATITUD: {{$casa->latitud}}</span></h5>
       </div>
 </div>
 @endsection

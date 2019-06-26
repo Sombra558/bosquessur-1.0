@@ -80758,7 +80758,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.terreno.zona, ", ", this.state.terreno.provincia, ",", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -81369,7 +81369,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.terreno.zona, ", ", this.state.terreno.provincia, ",", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -81671,7 +81671,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.terreno.zona, ", ", this.state.terreno.provincia, ",", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -81973,7 +81973,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.terreno.zona, ", ", this.state.terreno.provincia, ",", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -82275,7 +82275,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.terreno.zona, ", ", this.state.terreno.provincia, ",", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -82577,7 +82577,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.terreno.zona, ", ", this.state.terreno.provincia, ",", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
     }
   }]);
 
