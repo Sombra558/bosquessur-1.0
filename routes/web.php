@@ -1,5 +1,6 @@
 <?php
 Route::get('/', 'PublicController@index');
+Route::get('/Todos/Listado', 'PublicController@Todos');
 Route::get('/Sitios/Listado', 'PublicController@Sitios');
 Route::get('/Campos/Listado', 'PublicController@Campos');
 Route::get('/Parcelas/Listado', 'PublicController@Parcelas');

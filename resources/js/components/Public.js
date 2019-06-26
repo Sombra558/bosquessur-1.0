@@ -6,6 +6,7 @@ import {
 	Link,
 	Switch
 } from 'react-router-dom';
+import TodosApi from './Publico/Terrenos/Todos/TerrenosApi';
 import SitiosApi from './Publico/Terrenos/Sitios/TerrenosApi';
 import CasasApi from './Publico/Terrenos/Casas/CasaApi';
 import ParcelasApi from './Publico/Terrenos/Parcelas/TerrenosApi';
@@ -27,7 +28,8 @@ export default class Public extends Component {
                 <div className="row">
                     <div className="col-md-12">
                             <div className="row text-center border">
-                            <Link className="col-md-2 list-group-item" to="/">Sitios</Link>
+                            <Link className="col-md-2 list-group-item" to="/">Todos</Link>
+                            <Link className="col-md-2 list-group-item" to="/Sitios">Sitios</Link>
                             <Link className="col-md-2 list-group-item" to="/Casas">Casas</Link> 
                             <Link className="col-md-2 list-group-item" to="/Parcelas">Parcelas</Link>
                             <Link className="col-md-2 list-group-item" to="/Plantaciones">Plantaciones</Link>
@@ -38,7 +40,8 @@ export default class Public extends Component {
                     </div>
                     <div className="col-md-12">
                     <Switch>
-                           <Route path='/' exact component={SitiosApi}></Route>
+                    <Route path='/' exact component={TodosApi}></Route>
+                           <Route path='/Sitios' exact component={SitiosApi}></Route>
                            <Route path='/Casas' exact component={CasasApi}></Route>
                            <Route path='/Parcelas' exact component={ParcelasApi}></Route>
                            <Route path='/Plantaciones' exact component={PlantacionesApi}></Route>

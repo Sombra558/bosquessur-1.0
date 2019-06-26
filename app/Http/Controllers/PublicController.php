@@ -10,6 +10,10 @@ class PublicController extends Controller
     public function index(){
 		return view('welcome');
     }
+    public function Todos(){
+      $Todos = Terreno::where('estado',0)->get();
+      return $Todos;
+    }
     public function Sitios(){
       $Sitios = Terreno::where('clasificacion','Sitios')->where('estado',0)->get(); 
       return $Sitios;
