@@ -7,6 +7,11 @@
       <div class="col-sm-12">
                <h4 class="text-right margeneando1"> Zona:{{$casa->zona}} / Provincia: {{$casa->provincia}} / Comuna: {{$casa->comuna}}</h4>
       </div>
+      <div class="col-sm-12">
+               <h1 class="text-center margeneando1">{{$casa->casa}}</h1>
+               <br>
+      </div>
+      
     <br>
     <br>
     <div class="row">
@@ -31,27 +36,27 @@
             
                     <ul class="list-group">
                             <li class="list-group-item">
-                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-globe-americas col"></i> SUPERFICIE:<p style="font-size:15px" class="text-left">{{$casa->superficie}}</p></span></div>
-                            </li>
-                            <li class="list-group-item">
                                     <div><span style="font-size: 15px; color: #222;"><i class="fas fa-object-group col"></i> DESCRIPCION:</span>
                                     </div>
                                     <p class="text-justify" style="font-size:15px;">{{$casa->descripcion}}</p>
                             </li>
+
                             <li class="list-group-item">
-                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-bed col"></i> DORMITORIOS:<p style="font-size:15px" class="text-left">{{$casa->habitaciones}}</p></span></div>
-                            </li>
-                            <li class="list-group-item">
-                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-shower col"></i> BAÑOS:<p style="font-size:15px" class="text-left">{{$casa->banos}}</p></span></div>
+                                    <div>
+                                        <span style="font-size: 15px; color: #222; margin-right:20px;"><i class="fas fa-bed col"></i>   {{$casa->habitaciones}}</span>
+                                        <span style="font-size: 15px; color: #222; margin-right:20px;"><i class="fas fa-shower col"></i>   {{$casa->banos}}</span>
+                                        <span style="font-size: 15px; color: #222; margin-right:20px;"><i class="fas fa-globe-americas col"></i>   {{$casa->superficie}}</span>
+                                    </div> 
                             </li>
                             <li class="list-group-item">
                                     <div class="text-left"><span style="font-size: 15px; color: #222;">PRECIO: {{$casa->precio}}</span></div>
                             </li>
+                           
                     </ul>
                     <div class="main-menu">
                                 <ul class="nav navbar-nav" id="nav">
                                         <li  class="scroll">
-                                                <a class="btn btn-primary" data-section="#contact-area" href="#contact-area">Contactar</a>
+                                                <a style="padding-left: 50px; padding-right: 50px;" class="btn btn-primary" data-section="#contact-area" href="#contact-area">Contactar</a>
                                         </li>
                                 </ul>
                     </div>

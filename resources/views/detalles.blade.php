@@ -7,6 +7,10 @@
       <div class="col-sm-12">
                <h4 class="text-right margeneando1"> ZONA:{{$terreno->zona}} / PROVINCIA: {{$terreno->provincia}} / COMUNA: {{$terreno->comuna}}</h4>
       </div>
+      <div class="col-sm-12">
+               <h1 class="text-center margeneando1">{{$terreno->terreno}}</h1>
+               <br>
+      </div>
     <br>
     <br>
     <div class="row">
