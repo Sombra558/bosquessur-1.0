@@ -14,6 +14,7 @@ import CamposApi from './Publico/Terrenos/Campos/TerrenosApi';
 import PlantacionesApi from './Publico/Terrenos/Plantaciones/TerrenosApi';
 import IndustrialesApi from './Publico/Terrenos/Industriales/TerrenosApi';
 import LotesApi from './Publico/Terrenos/Lotes/TerrenosApi';
+import FundosApi from './Publico/Terrenos/Fundos/TerrenosApi';
 
 export default class Public extends Component {
     render() {
@@ -36,6 +37,7 @@ export default class Public extends Component {
                             <Link className="col-md-2 list-group-item" to="/Industriales">Industriales</Link>
                             <Link className="col-md-2 list-group-item" to="/Campos">Campos</Link>
                             <Link className="col-md-2 list-group-item" to="/Lotes">Lotes</Link>
+                            <Link className="col-md-2 list-group-item" to="/Fundos">Fundos</Link>
                             </div>
                     </div>
                     <div className="col-md-12">
@@ -48,6 +50,7 @@ export default class Public extends Component {
                            <Route path='/Industriales' exact component={IndustrialesApi}></Route>
                            <Route path='/Campos' exact component={CamposApi}></Route>
                            <Route path='/Lotes' exact component={LotesApi}></Route>
+                           <Route path='/Fundos' exact component={FundosApi}></Route>
                     </Switch> 
                     </div>      
                  </div>

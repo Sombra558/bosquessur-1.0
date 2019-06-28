@@ -440,6 +440,13 @@ ul.nostyle i {
 }
 #portfolio .portfolio-item .portfolio-item-inner {
   position: relative;
+  width: 100%;
+  height: 270px;
+}
+#portfolio .portfolio-item .portfolio-item-inner img{
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
   opacity: 0;

@@ -31,7 +31,7 @@ render()
             return (
           <div>
                 <a href={'Terreno/'+this.state.terreno.id}>
-                <div className="portfolio-item col-md-4">
+                <div className="portfolio-item BioIndustrial BioBio col-md-4">
                     <div className="portfolio-item-inner">
                         <img alt="" className="img-responsive" src={this.state.terreno.imaprimera} />
                         <div className="portfolio-info" data-toggle="modal" data-target={this.state.verificador}>

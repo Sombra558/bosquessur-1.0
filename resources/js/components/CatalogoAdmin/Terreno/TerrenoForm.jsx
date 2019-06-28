@@ -39,6 +39,7 @@ const TerrenoForm =(props) => (
             <option value="Industriales">Industriales</option>
             <option value="Campos">Campos</option>
             <option value="Lotes">Lotes</option>
+            <option value="Fundos">Fundos</option>
     </select>
     </div>
     

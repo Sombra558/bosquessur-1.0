@@ -42,6 +42,10 @@ class PublicController extends Controller
       $Lotes = Terreno::where('clasificacion','Lotes')->where('estado',0)->get(); 
       return $Lotes;
     }
+    public function Fundos(){
+      $fundos = Terreno::where('clasificacion','Fundos')->where('estado',0)->get(); 
+      return $fundos;
+    }
     public function Terreno($id){
         $terreno = Terreno::find($id); 
         return view('detalles',compact('terreno'));

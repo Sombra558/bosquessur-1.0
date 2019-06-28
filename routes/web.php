@@ -7,6 +7,7 @@ Route::get('/Parcelas/Listado', 'PublicController@Parcelas');
 Route::get('/Plantaciones/Listado', 'PublicController@Plantaciones');
 Route::get('/Industriales/Listado', 'PublicController@Industriales');
 Route::get('/Lotes/Listado', 'PublicController@Lotes');
+Route::get('/Fundos/Listado', 'PublicController@Fundos');
 Route::get('/Casas/Listado', 'PublicController@Casas');
 Route::get('/Terreno/{id}', 'PublicController@Terreno');
 Route::get('/Casa/{id}', 'PublicController@Casa');
@@ -16,6 +17,7 @@ Route::get('/Campos', 'PublicController@Redirecciones');
 Route::get('/Industriales', 'PublicController@Redirecciones');
 Route::get('/Plantaciones', 'PublicController@Redirecciones');
 Route::get('/Lotes', 'PublicController@Redirecciones');
+Route::get('/Fundos', 'PublicController@Redirecciones');
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/ControlAdmin', 'AdminController@index');
     Route::get('/ControlAdmin/Terreno', 'AdminController@Redirecciones');
