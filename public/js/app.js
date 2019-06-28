@@ -62972,7 +62972,7 @@ function polyfill(Component) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75998,9 +75998,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CatalogoAdmin_Terreno_TerrenoAdminApp__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenoAdminApp */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoAdminApp.jsx");
 /* harmony import */ var _CatalogoAdmin_Casa_CasaAdminApp__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaAdminApp */ "./resources/js/components/CatalogoAdmin/Casa/CasaAdminApp.jsx");
 /* harmony import */ var _CatalogoAdmin_Terreno_TerrenoDetalles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenoDetalles */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoDetalles.jsx");
-/* harmony import */ var _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaDetalles.jsx");
-/* harmony import */ var _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenoDetallesRegion */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoDetallesRegion.jsx");
-/* harmony import */ var _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaRegionDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaRegionDetalles.jsx");
+/* harmony import */ var _CatalogoAdmin_Terreno_TerrenImg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenImg */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenImg.jsx");
+/* harmony import */ var _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaDetalles.jsx");
+/* harmony import */ var _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenoDetallesRegion */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoDetallesRegion.jsx");
+/* harmony import */ var _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaRegionDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaRegionDetalles.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -76018,6 +76019,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -76079,6 +76081,12 @@ function (_Component) {
         to: "/ControlAdmin/Casa/Editar",
         className: "list-group-item list-group-item-action MenuStyle"
       }, "Editar Casa"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/ControlAdmin/Terreno/EditarImg",
+        className: "list-group-item list-group-item-action MenuStyle"
+      }, "Editar Imagenes Terreno"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/ControlAdmin/Casa/EditarImg",
+        className: "list-group-item list-group-item-action MenuStyle"
+      }, "Editar Imagenes Casa"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/ControlAdmin/Terreno/EditarRegiones",
         className: "list-group-item list-group-item-action MenuStyle"
       }, "Editar Regiones de Terrenos"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -76146,15 +76154,19 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Casa/Editar",
         exact: true,
-        component: _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_16__["default"]
+        component: _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_17__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/ControlAdmin/Terreno/EditarImg",
+        exact: true,
+        component: _CatalogoAdmin_Terreno_TerrenImg__WEBPACK_IMPORTED_MODULE_16__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Terreno/EditarRegiones",
         exact: true,
-        component: _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_17__["default"]
+        component: _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_18__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Casa/EditarRegiones",
         exact: true,
-        component: _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_18__["default"]
+        component: _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_19__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Region",
         exact: true,
@@ -79468,6 +79480,95 @@ var RegionList = function RegionList(props) {
 
 /***/ }),
 
+/***/ "./resources/js/components/CatalogoAdmin/Terreno/TerrenImg.jsx":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/CatalogoAdmin/Terreno/TerrenImg.jsx ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DetallesTerreno; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _TerrenoListImg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TerrenoListImg */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoListImg.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var DetallesTerreno =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(DetallesTerreno, _Component);
+
+  function DetallesTerreno() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, DetallesTerreno);
+
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(DetallesTerreno)).call.apply(_getPrototypeOf2, [this].concat(props)));
+    _this.state = {
+      terrenos: []
+    };
+    return _this;
+  }
+
+  _createClass(DetallesTerreno, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/Terreno").then(function (res) {
+        var terrenos = res.data;
+
+        _this2.setState({
+          terrenos: terrenos
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TerrenoListImg__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        terrenos: this.state.terrenos
+      }));
+    }
+  }]);
+
+  return DetallesTerreno;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/CatalogoAdmin/Terreno/Terreno.jsx":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/CatalogoAdmin/Terreno/Terreno.jsx ***!
@@ -80245,6 +80346,232 @@ var TerrenoForm = function TerrenoForm(props) {
 
 /***/ }),
 
+/***/ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoImg.jsx":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/CatalogoAdmin/Terreno/TerrenoImg.jsx ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Terreno; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! toastr */ "./node_modules/toastr/toastr.js");
+/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(toastr__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var toastr_build_toastr_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! toastr/build/toastr.css */ "./node_modules/toastr/build/toastr.css");
+/* harmony import */ var toastr_build_toastr_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(toastr_build_toastr_css__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Terreno =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Terreno, _Component);
+
+  function Terreno() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Terreno);
+
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Terreno)).call.apply(_getPrototypeOf2, [this].concat(props)));
+    _this.state = {
+      pasador: true,
+      verificador: '#modal' + _this.props.id,
+      modalo: 'modal' + _this.props.id,
+      terreno: {
+        id: _this.props.id,
+        terreno: _this.props.terreno,
+        descripcion: _this.props.descripcion,
+        precio: _this.props.precio,
+        superficie: _this.props.superficie,
+        utm: _this.props.utm,
+        latitud: _this.props.latitud,
+        longitud: _this.props.longitud,
+        zona: _this.props.zona,
+        provincia: _this.props.provincia,
+        comuna: _this.props.comuna,
+        estado: _this.props.estado,
+        imaprimera: _this.props.imaprimera,
+        imasegunda: _this.props.imasegunda,
+        imatercera: _this.props.imatercera,
+        mapa: _this.props.mapa
+      }
+    };
+    _this.ActualizarTerreno = _this.ActualizarTerreno.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Terreno, [{
+    key: "ActualizarTerreno",
+    value: function ActualizarTerreno(oje) {
+      var _this2 = this;
+
+      oje.preventDefault();
+      var form = oje.target,
+          terreno = {
+        id: this.state.terreno.id,
+        terreno: this.props.terreno,
+        imaprimera: form.imaprimera.value,
+        imasegunda: form.imasegunda.value,
+        imatercera: form.imatercera.value,
+        mapa: form.mapa.value
+      };
+      axios.put("/ControlAdmin/TerreninUpdateImg/".concat(this.state.terreno.id), {
+        id: terreno.id,
+        terreno: terreno.terreno,
+        imaprimera: terreno.imaprimera,
+        imasegunda: terreno.imasegunda,
+        imatercera: terreno.imatercera,
+        mapa: terreno.mapa
+      }).then(function (res) {
+        console.log(res);
+        console.log(res.data);
+
+        _this2.setState({
+          terreno: terreno
+        });
+
+        toastr__WEBPACK_IMPORTED_MODULE_1___default.a.warning('Imagenes Actualizada correctamente');
+      });
+      form.reset();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.pasador === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+          className: "odd gradeX"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: this.state.terreno.imaprimera,
+          height: "80px",
+          width: "80px"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: this.state.terreno.imasegunda,
+          height: "80px",
+          width: "80px"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: this.state.terreno.imatercera,
+          height: "80px",
+          width: "80px"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          className: "btn btn-warning",
+          alt: "Editar",
+          "data-toggle": "modal",
+          "data-target": this.state.verificador
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          className: "modal fade",
+          id: this.state.modalo,
+          tabIndex: "-1",
+          role: "dialog",
+          "aria-labelledby": "exampleModalLabel",
+          "aria-hidden": "true"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-dialog",
+          role: "document"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-content"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-header"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+          className: "modal-title",
+          id: "exampleModalLabel"
+        }, "Edicion de Terreno"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          className: "close",
+          "data-dismiss": "modal",
+          "aria-label": "Close"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          "aria-hidden": "true"
+        }, "\xD7"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-body"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+          onSubmit: this.ActualizarTerreno
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.terreno.imaprimera,
+          className: "form-control",
+          type: "text",
+          name: "imaprimera",
+          placeholder: this.state.terreno.imaprimera
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.terreno.imasegunda,
+          className: "form-control",
+          type: "text",
+          name: "imasegunda",
+          placeholder: this.state.terreno.imasegunda
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.terreno.imatercera,
+          className: "form-control",
+          type: "text",
+          name: "imatercera",
+          placeholder: this.state.terreno.imatercera
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.terreno.mapa,
+          className: "form-control",
+          type: "text",
+          name: "mapa",
+          placeholder: this.state.terreno.mapa
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          className: "form-control btn btn-primary",
+          type: "submit",
+          value: "Guardar"
+        })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-footer"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          className: "btn btn-secondary",
+          "data-dismiss": "modal"
+        }, "Close"))))));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null);
+      }
+    }
+  }]);
+
+  return Terreno;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoList.jsx":
 /*!***********************************************************************!*\
   !*** ./resources/js/components/CatalogoAdmin/Terreno/TerrenoList.jsx ***!
@@ -80282,6 +80609,56 @@ var TerrenoList = function TerrenoList(props) {
       zona: terrenos.zona,
       provincia: terrenos.provincia,
       comuna: terrenos.comuna,
+      estado: terrenos.estado
+    });
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TerrenoList);
+
+/***/ }),
+
+/***/ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoListImg.jsx":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/CatalogoAdmin/Terreno/TerrenoListImg.jsx ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _TerrenoImg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TerrenoImg */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoImg.jsx");
+
+
+
+var TerrenoList = function TerrenoList(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    width: "100%",
+    className: "table table-striped table-bordered table-hover",
+    id: "dataTables-example"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Terreno"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Imagen Principal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Imagen Secundaria"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Imagen Tercearia"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Accion"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, props.terrenos.map(function (terrenos) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TerrenoImg__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: terrenos.id,
+      id: terrenos.id,
+      terreno: terrenos.terreno,
+      descripcion: terrenos.descripcion,
+      precio: terrenos.precio,
+      superficie: terrenos.superficie,
+      utm: terrenos.utm,
+      latitud: terrenos.latitud,
+      longitud: terrenos.longitud,
+      clasificacion: terrenos.clasificacion,
+      zona: terrenos.zona,
+      provincia: terrenos.provincia,
+      comuna: terrenos.comuna,
+      imaprimera: terrenos.imaprimera,
+      imasegunda: terrenos.imasegunda,
+      imatercera: terrenos.imatercera,
+      mapa: terrenos.mapa,
       estado: terrenos.estado
     });
   }))));
@@ -80767,7 +81144,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.terreno.provincia, " -  COMUNA: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -81193,7 +81570,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.casa.casa), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.casa.provincia, " -  Comuna: ", this.state.casa.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.casa.casa), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.casa.provincia, " -  COMUNA: ", this.state.casa.comuna))))));
     }
   }]);
 
@@ -81378,7 +81755,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.terreno.provincia, " -  COMUNA: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -81680,7 +82057,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.terreno.provincia, " -  COMUNA: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -81982,7 +82359,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.terreno.provincia, " -  COMUNA: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -82284,7 +82661,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.terreno.provincia, " -  COMUNA: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -82586,7 +82963,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.terreno.provincia, " -  COMUNA: ", this.state.terreno.comuna))))));
     }
   }]);
 
@@ -82892,7 +83269,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.casa.casa), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.casa.provincia, " -  Comuna: ", this.state.casa.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.casa.casa), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.casa.provincia, " -  COMUNA: ", this.state.casa.comuna))))));
     }
   }]);
 
@@ -82994,7 +83371,7 @@ function (_Component) {
         className: "portfolio-info",
         "data-toggle": "modal",
         "data-target": this.state.verificador
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Provincia: ", this.state.terreno.provincia, " -  Comuna: ", this.state.terreno.comuna))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.terreno.terreno), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROVINCIA: ", this.state.terreno.provincia, " -  COMUNA: ", this.state.terreno.comuna))))));
     }
   }]);
 

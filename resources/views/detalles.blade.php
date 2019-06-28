@@ -5,9 +5,6 @@
 <div class="row">
     <br>
       <div class="col-sm-12">
-               <h4 class="text-right margeneando1"> ZONA:{{$terreno->zona}} / PROVINCIA: {{$terreno->provincia}} / COMUNA: {{$terreno->comuna}}</h4>
-      </div>
-      <div class="col-sm-12">
                <h1 class="text-center margeneando1">{{$terreno->terreno}}</h1>
                <br>
       </div>
@@ -42,7 +39,15 @@
                                     </div>
                                     <p class="text-justify" style="font-size:15px;">{{$terreno->descripcion}}</p>
                             </li>
-                            
+                            <li class="list-group-item">
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">ZONA: {{$terreno->zona}}</span></div>
+                            </li>
+                            <li class="list-group-item">
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PROVINCIA: {{$terreno->provincia}}</span></div>
+                            </li>
+                            <li class="list-group-item">
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">COMUNA: {{$terreno->comuna}}</span></div>
+                            </li>
                             <li class="list-group-item">
                                     <div class="text-left"><span style="font-size: 15px; color: #222;">PRECIO: {{$terreno->precio}}</span></div>
                             </li>
@@ -64,7 +69,7 @@
 <div class="col-sm-8 well">
         <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
         <h5>UTM:{{$terreno->utm}}</h5>
-        <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span>LONGITUD: {{$terreno->longitud}}</span><span style="margin-left:35px;">LATITUD: {{$terreno->latitud}}</span></h5>
+        <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span>LATITUD: {{$terreno->latitud}}</span><span style="margin-left:35px;">LONGITUD: {{$terreno->longitud}}</span></h5>
       </div>
 </div>
 @endsection

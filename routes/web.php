@@ -53,6 +53,7 @@ Route::group(['middleware' => 'admin'], function () {
     Route::get('/ControlAdmin/CasaVContador', 'CasaController@CasaVContador');
     Route::put('/ControlAdmin/TerrenoVendido/{id}','TerrenoController@Vendido');
     Route::put('/ControlAdmin/CasaVendido/{id}','CasaController@Vendido');
+    Route::put('/ControlAdmin/TerreninUpdateImg/{id}','TerrenoController@updateImagen');
     Route::put('/ControlAdmin/TerrenoUpdateRegion/{id}','TerrenoController@updateRegion');
     Route::put('/ControlAdmin/CasaUpdateRegion/{id}','CasaController@updateRegion');
 });

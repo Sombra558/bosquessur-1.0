@@ -5,9 +5,6 @@
 <div class="row">
     <br>
       <div class="col-sm-12">
-               <h4 class="text-right margeneando1"> Zona:{{$casa->zona}} / Provincia: {{$casa->provincia}} / Comuna: {{$casa->comuna}}</h4>
-      </div>
-      <div class="col-sm-12">
                <h1 class="text-center margeneando1">{{$casa->casa}}</h1>
                <br>
       </div>
@@ -49,6 +46,15 @@
                                     </div> 
                             </li>
                             <li class="list-group-item">
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">ZONA: {{$casa->zona}}</span></div>
+                            </li>
+                            <li class="list-group-item">
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PROVINCIA: {{$casa->provincia}}</span></div>
+                            </li>
+                            <li class="list-group-item">
+                                    <div class="text-left"><span style="font-size: 15px; color: #222;">COMUNA: {{$casa->comuna}}</span></div>
+                            </li>
+                            <li class="list-group-item">
                                     <div class="text-left"><span style="font-size: 15px; color: #222;">PRECIO: {{$casa->precio}}</span></div>
                             </li>
                            
@@ -70,7 +76,7 @@
 <div class="col-sm-8 well">
         <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
         <h5>UTM:{{$casa->utm}}</h5>
-        <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span>LONGITUD: {{$casa->longitud}}</span><span style="margin-left:35px;">LATITUD: {{$casa->latitud}}</span></h5>
+        <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span></span>LATITUD: {{$casa->latitud}}<span style="margin-left:35px;">LONGITUD: {{$casa->longitud}}</span></h5>
       </div>
 </div>
 @endsection

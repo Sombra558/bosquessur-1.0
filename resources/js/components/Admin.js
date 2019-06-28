@@ -19,6 +19,7 @@ import ComunaApiEliminar from './CatalogoAdmin/Comunas/CoEliminar';
 import TerrenoApi from './CatalogoAdmin/Terreno/TerrenoAdminApp';
 import CasaApi from './CatalogoAdmin/Casa/CasaAdminApp';
 import TerrenoEdit from './CatalogoAdmin/Terreno/TerrenoDetalles';
+import TerrenoEditImg from './CatalogoAdmin/Terreno/TerrenImg';
 import CasaEdit from './CatalogoAdmin/Casa/CasaDetalles';
 import TerrenoEditRegiones from './CatalogoAdmin/Terreno/TerrenoDetallesRegion';
 import CasaEditRegiones from './CatalogoAdmin/Casa/CasaRegionDetalles';
@@ -46,6 +47,10 @@ export default class Admin extends Component {
                                 <Link to="/ControlAdmin/Terreno/Editar" className="list-group-item list-group-item-action MenuStyle">Editar Terreno</Link>
 
                                 <Link to="/ControlAdmin/Casa/Editar" className="list-group-item list-group-item-action MenuStyle">Editar Casa</Link>
+
+                                <Link to="/ControlAdmin/Terreno/EditarImg" className="list-group-item list-group-item-action MenuStyle">Editar Imagenes Terreno</Link>
+
+                                <Link to="/ControlAdmin/Casa/EditarImg" className="list-group-item list-group-item-action MenuStyle">Editar Imagenes Casa</Link>
 
                                 <Link to="/ControlAdmin/Terreno/EditarRegiones" className="list-group-item list-group-item-action MenuStyle">Editar Regiones de Terrenos</Link>
 
@@ -91,7 +96,8 @@ export default class Admin extends Component {
                 <Route path='/ControlAdmin/Terreno' exact component={TerrenoApi} />
                 <Route path='/ControlAdmin/Casa' exact component={CasaApi} />
                 <Route path='/ControlAdmin/Terreno/Editar' exact component={TerrenoEdit} /> 
-                <Route path='/ControlAdmin/Casa/Editar' exact component={CasaEdit} /> 
+                <Route path='/ControlAdmin/Casa/Editar' exact component={CasaEdit} />
+                <Route path='/ControlAdmin/Terreno/EditarImg' exact component={TerrenoEditImg} />  
                 <Route path='/ControlAdmin/Terreno/EditarRegiones' exact component={TerrenoEditRegiones} />
                 <Route path='/ControlAdmin/Casa/EditarRegiones' exact component={CasaEditRegiones} />   
                 <Route path='/ControlAdmin/Region' exact component={RegionApi} /> 

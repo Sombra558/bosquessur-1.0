@@ -39,7 +39,7 @@ render()
                         <img alt="" className="img-responsive" src={this.state.casa.imaprimera} />
                         <div className="portfolio-info" data-toggle="modal" data-target={this.state.verificador}>
                             <p>{this.state.casa.casa}</p>
-                            <h3>Provincia: {this.state.casa.provincia} -  Comuna: {this.state.casa.comuna}</h3>
+                            <h3>PROVINCIA: {this.state.casa.provincia} -  COMUNA: {this.state.casa.comuna}</h3>
                          </div>
                     </div>
                 </div>

@@ -85,6 +85,15 @@ class TerrenoController extends Controller
               ]);
            return;
           }
+          public function updateImagen(Request $request, $id){
+            Terreno::find($id)->update([
+                'imaprimera' => request('imaprimera'),
+                'imasegunda' => request('imasegunda'),
+                'imatercera' => request('imatercera'),
+                'mapa' => request('mapa'),
+                ]);
+             return;
+            }
       public function index(){
         $terrenos = Terreno::all(); 
         return $terrenos;
