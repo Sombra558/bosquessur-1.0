@@ -20,6 +20,7 @@
     data-href="http://138.68.51.79/Casa/{{$casa->id}}" 
     data-layout="button_count">
   </div>
+  <div id="fb-root"></div>
       </div>
       
     <br>

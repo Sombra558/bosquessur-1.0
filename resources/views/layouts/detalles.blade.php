@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta property="og:description"   content="Bosquessur, Somos un equipo de trabajo especializado en el corretaje de propiedades,
         para ellos contamos con personas capacitadas y con la experiencia necesaria para orientar de la mejor manera a
         nuestros clientes." />
-        <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+        <meta property="og:image"         content="" />
         <meta name="description" content="Somos un equipo de trabajo especializado en el corretaje de propiedades,
         para ellos contamos con personas capacitadas y con la experiencia necesaria para orientar de la mejor manera
          a nuestros clientes. Ubicados en AVENIDA ALEMANIA N°358 PISO 2-LOS ÁNGELES">
@@ -77,7 +77,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="container">
                 @yield('content')
                 </div>
-                <div id="fb-root"></div>
+                
                
 <section id="contact-area">
 <div class="container">
