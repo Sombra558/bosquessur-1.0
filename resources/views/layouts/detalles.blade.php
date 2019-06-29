@@ -20,10 +20,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+        <meta property="og:url"           content="http://138.68.51.79" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="BosquesSur" />
-        <meta property="og:description"   content="Your description" />
+        <meta property="og:description"   content="Bosquessur, Somos un equipo de trabajo especializado en el corretaje de propiedades,
+        para ellos contamos con personas capacitadas y con la experiencia necesaria para orientar de la mejor manera a
+        nuestros clientes." />
         <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
         <meta name="description" content="Somos un equipo de trabajo especializado en el corretaje de propiedades,
         para ellos contamos con personas capacitadas y con la experiencia necesaria para orientar de la mejor manera
@@ -33,10 +35,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta name="keywords" content=", Los ángeles, bosquessur, bosques, sur, corretaje, compra, propiedades, alquiler,
         propiedad, biobio, bio, arriendo, venta, viii región, tierras, construccion, lotes, terrenos, plantacion, forestales,
         campos, industriales, agricolas, perimetrales, chile"/>
-        <meta content='Bosquessur' property='og:title'/> 
-        <meta content='Bosquessur, Somos un equipo de trabajo especializado en el corretaje de propiedades,
-        para ellos contamos con personas capacitadas y con la experiencia necesaria para orientar de la mejor manera a
-        nuestros clientes.' property='og:description'/>
         <title>Bosque Sur</title>        
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <meta name="google-site-verification" content="BOek7ID6yF8YrBHHHURaqqxGJ4eTGovojaSm7ILpdFA" />
