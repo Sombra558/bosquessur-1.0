@@ -20,6 +20,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="BosquesSur" />
+        <meta property="og:description"   content="Your description" />
+        <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
         <meta name="description" content="Somos un equipo de trabajo especializado en el corretaje de propiedades,
         para ellos contamos con personas capacitadas y con la experiencia necesaria para orientar de la mejor manera
          a nuestros clientes. Ubicados en AVENIDA ALEMANIA N°358 PISO 2-LOS ÁNGELES">
@@ -74,7 +79,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="container">
                 @yield('content')
                 </div>
-                
+                <div id="fb-root"></div>
+               
 <section id="contact-area">
 <div class="container">
 <div class="row">

@@ -53,6 +53,7 @@ export default class TerrenoAdminApp extends Component {
         .then(res => {
             console.log(res);
             console.log(res.data);
+            toastr.success('Casa creada de manera satisfactoria', 'Mensaje:')
         })
          this.setState({
             casas: this.state.casas.concat([casa])

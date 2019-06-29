@@ -76645,6 +76645,7 @@ function (_Component) {
       }).then(function (res) {
         console.log(res);
         console.log(res.data);
+        toastr__WEBPACK_IMPORTED_MODULE_3___default.a.success('Casa creada de manera satisfactoria', 'Mensaje:');
       });
       this.setState({
         casas: this.state.casas.concat([casa])
