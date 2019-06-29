@@ -18,6 +18,8 @@ export default class GeneralApp extends Component {
     contadorplantaciones:0,
     contadorindustriales:0,
     contadorcampos:0,
+    contadorlotes:0,
+    contadorfundos:0,
     contadorcasas:0,
     contadordcasas:0,
     contadorvcasas:0,
@@ -92,6 +94,20 @@ componentDidMount() {
         this.setState({ contadorcampos });
         }
       ),
+      axios.get(`/ControlAdmin/TerrenoLotes`)
+      .then(
+        res => {
+        const contadorlotes = res.data;
+        this.setState({ contadorlotes });
+        }
+      ),
+      axios.get(`/ControlAdmin/TerrenoFundos`)
+      .then(
+        res => {
+        const contadorfundos = res.data;
+        this.setState({ contadorfundos });
+        }
+      ),
       axios.get(`/ControlAdmin/TerrenoDContador`)
       .then(
         res => {
@@ -136,7 +152,7 @@ componentDidMount() {
             </Switch>
             <div className="row">
                   <h1 className="col-sm-12">Sección de Terrenos</h1>
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-totales mb-3">
                 <div className="card-header"><h3 className="card-title">Total de Propiedades</h3></div>   
                 <div className="card-body">
@@ -145,7 +161,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-sitios mb-3">
                 <div className="card-header"><h3 className="card-title">Sitios</h3></div>   
                 <div className="card-body">
@@ -154,7 +170,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-parcelas mb-3">
                 <div className="card-header"><h3 className="card-title">Parcelas</h3></div>   
                 <div className="card-body">
@@ -163,7 +179,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-plataciones mb-3">
                 <div className="card-header"><h3 className="card-title">Plantaciones</h3></div>   
                 <div className="card-body">
@@ -172,7 +188,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-industriales mb-3">
                 <div className="card-header"><h3 className="card-title">Industriales</h3></div>   
                 <div className="card-body">
@@ -181,7 +197,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-campos mb-3">
                 <div className="card-header"><h3 className="card-title">Campos</h3></div>   
                 <div className="card-body">
@@ -190,8 +206,26 @@ componentDidMount() {
                 </div>
                 </div>
 
+                <div className="col-sm-12 col-md-12 col-lg-4">
+                <div className="card text-white bg-lotes mb-3">
+                <div className="card-header"><h3 className="card-title">Lotes</h3></div>   
+                <div className="card-body">
+                <h1>{this.state.contadorlotes}</h1></div>
                 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                </div>
+                </div>
+
+                <div className="col-sm-12 col-md-12 col-lg-4">
+                <div className="card text-white bg-fundos mb-3">
+                <div className="card-header"><h3 className="card-title">Fundos</h3></div>   
+                <div className="card-body">
+                <h1>{this.state.contadorfundos}</h1></div>
+                
+                </div>
+                </div>
+
+                
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-disponibles mb-3">
                 <div className="card-header"><h3 className="card-title">Terrenos Disponibles</h3></div>   
                 <div className="card-body">
@@ -200,7 +234,7 @@ componentDidMount() {
                 </div>
                 </div>
                 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-vendidos mb-3">
                 <div className="card-header"><h3 className="panel-title">Terrenos Vendidos</h3></div>   
                 <div className="card-body">
@@ -209,7 +243,7 @@ componentDidMount() {
                 </div>
                 </div> 
                 <h1 className="col-sm-12">Sección de Casas</h1>
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-casas mb-3">
                 <div className="card-header"><h3 className="card-title">Casas</h3></div>   
                 <div className="card-body">
@@ -218,7 +252,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-dcasas mb-3">
                 <div className="card-header"><h3 className="card-title">Casas Disponibles</h3></div>   
                 <div className="card-body">
@@ -227,7 +261,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-vcasas mb-3">
                 <div className="card-header"><h3 className="card-title">Casas Vendidas</h3></div>   
                 <div className="card-body">
@@ -236,7 +270,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-danger mb-3">
                 <div className="card-header"><h3 className="panel-title">Zonas Registradas</h3></div>   
                 <div className="card-body">
@@ -245,7 +279,7 @@ componentDidMount() {
                 </div>
                 </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-provincias mb-3">
                 <div className="card-header"><h3 className="panel-title">Provincias Registradas</h3></div>   
                 <div className="card-body">
@@ -253,7 +287,7 @@ componentDidMount() {
                
                 </div>
                 </div>
-                <div className="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-4">
                 <div className="card text-white bg-comunas mb-3">
                 <div className="card-header"><h3 className="panel-title">Comunas Registradas</h3></div>   
                 <div className="card-body">

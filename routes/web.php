@@ -34,6 +34,8 @@ Route::group(['middleware' => 'admin'], function () {
     Route::get('/ControlAdmin/Comuna', 'AdminController@Redirecciones');
     Route::get('/ControlAdmin/Comuna/Editar', 'AdminController@Redirecciones');
     Route::get('/ControlAdmin/Comuna/Eliminar', 'AdminController@Redirecciones');
+    Route::get('/ControlAdmin/Terreno/EditarImg', 'AdminController@Redirecciones');
+    Route::get('/ControlAdmin/Casa/EditarImg', 'AdminController@Redirecciones');
     Route::resource('/Terreno','TerrenoController');
     Route::resource('/Casa','CasaController');
     Route::resource('/Comuna','ComunaController');
@@ -48,6 +50,8 @@ Route::group(['middleware' => 'admin'], function () {
     Route::get('/ControlAdmin/TerrenoCampos', 'TerrenoController@TerrenoCampos');
     Route::get('/ControlAdmin/TerrenoPlantaciones', 'TerrenoController@TerrenoPlantaciones');
     Route::get('/ControlAdmin/TerrenoIndustriales', 'TerrenoController@TerrenoIndustriales');
+    Route::get('/ControlAdmin/TerrenoLotes', 'TerrenoController@TerrenoLotes');
+    Route::get('/ControlAdmin/TerrenoFundos', 'TerrenoController@TerrenoFundos');
     Route::get('/ControlAdmin/TerrenoVContador', 'TerrenoController@TerrenoVContador');
     Route::get('/ControlAdmin/TerrenoDContador', 'TerrenoController@TerrenoDContador');
     Route::get('/ControlAdmin/CasaContador', 'CasaController@CasaContador');
@@ -56,6 +60,7 @@ Route::group(['middleware' => 'admin'], function () {
     Route::put('/ControlAdmin/TerrenoVendido/{id}','TerrenoController@Vendido');
     Route::put('/ControlAdmin/CasaVendido/{id}','CasaController@Vendido');
     Route::put('/ControlAdmin/TerreninUpdateImg/{id}','TerrenoController@updateImagen');
+    Route::put('/ControlAdmin/CasaUpdateImg/{id}','CasaController@updateImagen');
     Route::put('/ControlAdmin/TerrenoUpdateRegion/{id}','TerrenoController@updateRegion');
     Route::put('/ControlAdmin/CasaUpdateRegion/{id}','CasaController@updateRegion');
 });

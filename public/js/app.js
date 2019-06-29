@@ -75999,9 +75999,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CatalogoAdmin_Casa_CasaAdminApp__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaAdminApp */ "./resources/js/components/CatalogoAdmin/Casa/CasaAdminApp.jsx");
 /* harmony import */ var _CatalogoAdmin_Terreno_TerrenoDetalles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenoDetalles */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoDetalles.jsx");
 /* harmony import */ var _CatalogoAdmin_Terreno_TerrenImg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenImg */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenImg.jsx");
-/* harmony import */ var _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaDetalles.jsx");
-/* harmony import */ var _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenoDetallesRegion */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoDetallesRegion.jsx");
-/* harmony import */ var _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaRegionDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaRegionDetalles.jsx");
+/* harmony import */ var _CatalogoAdmin_Casa_TerrenImg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/TerrenImg */ "./resources/js/components/CatalogoAdmin/Casa/TerrenImg.jsx");
+/* harmony import */ var _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaDetalles.jsx");
+/* harmony import */ var _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./CatalogoAdmin/Terreno/TerrenoDetallesRegion */ "./resources/js/components/CatalogoAdmin/Terreno/TerrenoDetallesRegion.jsx");
+/* harmony import */ var _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./CatalogoAdmin/Casa/CasaRegionDetalles */ "./resources/js/components/CatalogoAdmin/Casa/CasaRegionDetalles.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -76019,6 +76020,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -76154,19 +76156,23 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Casa/Editar",
         exact: true,
-        component: _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_17__["default"]
+        component: _CatalogoAdmin_Casa_CasaDetalles__WEBPACK_IMPORTED_MODULE_18__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Terreno/EditarImg",
         exact: true,
         component: _CatalogoAdmin_Terreno_TerrenImg__WEBPACK_IMPORTED_MODULE_16__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/ControlAdmin/Casa/EditarImg",
+        exact: true,
+        component: _CatalogoAdmin_Casa_TerrenImg__WEBPACK_IMPORTED_MODULE_17__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Terreno/EditarRegiones",
         exact: true,
-        component: _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_18__["default"]
+        component: _CatalogoAdmin_Terreno_TerrenoDetallesRegion__WEBPACK_IMPORTED_MODULE_19__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Casa/EditarRegiones",
         exact: true,
-        component: _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_19__["default"]
+        component: _CatalogoAdmin_Casa_CasaRegionDetalles__WEBPACK_IMPORTED_MODULE_20__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/ControlAdmin/Region",
         exact: true,
@@ -77272,6 +77278,350 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/CatalogoAdmin/Casa/TerrenImg.jsx":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/CatalogoAdmin/Casa/TerrenImg.jsx ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DetallesTerreno; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _TerrenoListImg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TerrenoListImg */ "./resources/js/components/CatalogoAdmin/Casa/TerrenoListImg.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var DetallesTerreno =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(DetallesTerreno, _Component);
+
+  function DetallesTerreno() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, DetallesTerreno);
+
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(DetallesTerreno)).call.apply(_getPrototypeOf2, [this].concat(props)));
+    _this.state = {
+      casas: []
+    };
+    return _this;
+  }
+
+  _createClass(DetallesTerreno, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/Casa").then(function (res) {
+        var casas = res.data;
+
+        _this2.setState({
+          casas: casas
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TerrenoListImg__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        casas: this.state.casas
+      }));
+    }
+  }]);
+
+  return DetallesTerreno;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CatalogoAdmin/Casa/TerrenoImg.jsx":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/CatalogoAdmin/Casa/TerrenoImg.jsx ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Terreno; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! toastr */ "./node_modules/toastr/toastr.js");
+/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(toastr__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var toastr_build_toastr_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! toastr/build/toastr.css */ "./node_modules/toastr/build/toastr.css");
+/* harmony import */ var toastr_build_toastr_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(toastr_build_toastr_css__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Terreno =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Terreno, _Component);
+
+  function Terreno() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Terreno);
+
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Terreno)).call.apply(_getPrototypeOf2, [this].concat(props)));
+    _this.state = {
+      pasador: true,
+      verificador: '#modal' + _this.props.id,
+      modalo: 'modal' + _this.props.id,
+      casa: {
+        id: _this.props.id,
+        casa: _this.props.casa,
+        imaprimera: _this.props.imaprimera,
+        imasegunda: _this.props.imasegunda,
+        imatercera: _this.props.imatercera,
+        mapa: _this.props.mapa
+      }
+    };
+    _this.ActualizarTerreno = _this.ActualizarTerreno.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Terreno, [{
+    key: "ActualizarTerreno",
+    value: function ActualizarTerreno(oje) {
+      var _this2 = this;
+
+      oje.preventDefault();
+      var form = oje.target,
+          casa = {
+        id: this.state.casa.id,
+        casa: this.props.casa,
+        imaprimera: form.imaprimera.value,
+        imasegunda: form.imasegunda.value,
+        imatercera: form.imatercera.value,
+        mapa: form.mapa.value
+      };
+      axios.put("/ControlAdmin/CasaUpdateImg/".concat(this.state.casa.id), {
+        id: casa.id,
+        casa: casa.casa,
+        imaprimera: casa.imaprimera,
+        imasegunda: casa.imasegunda,
+        imatercera: casa.imatercera,
+        mapa: casa.mapa
+      }).then(function (res) {
+        console.log(res);
+        console.log(res.data);
+
+        _this2.setState({
+          casa: casa
+        });
+
+        toastr__WEBPACK_IMPORTED_MODULE_1___default.a.warning('Imagenes Actualizada correctamente');
+      });
+      form.reset();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.pasador === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+          className: "odd gradeX"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.state.casa.casa), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: this.state.casa.imaprimera,
+          height: "80px",
+          width: "80px"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: this.state.casa.imasegunda,
+          height: "80px",
+          width: "80px"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: this.state.casa.imatercera,
+          height: "80px",
+          width: "80px"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          className: "btn btn-warning",
+          alt: "Editar",
+          "data-toggle": "modal",
+          "data-target": this.state.verificador
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          className: "modal fade",
+          id: this.state.modalo,
+          tabIndex: "-1",
+          role: "dialog",
+          "aria-labelledby": "exampleModalLabel",
+          "aria-hidden": "true"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-dialog",
+          role: "document"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-content"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-header"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+          className: "modal-title",
+          id: "exampleModalLabel"
+        }, "Edicion de Imagenes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          className: "close",
+          "data-dismiss": "modal",
+          "aria-label": "Close"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          "aria-hidden": "true"
+        }, "\xD7"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-body"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+          onSubmit: this.ActualizarTerreno
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.casa.imaprimera,
+          className: "form-control",
+          type: "text",
+          name: "imaprimera",
+          placeholder: this.state.casa.imaprimera
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.casa.imasegunda,
+          className: "form-control",
+          type: "text",
+          name: "imasegunda",
+          placeholder: this.state.casa.imasegunda
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.casa.imatercera,
+          className: "form-control",
+          type: "text",
+          name: "imatercera",
+          placeholder: this.state.casa.imatercera
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          defaultValue: this.state.casa.mapa,
+          className: "form-control",
+          type: "text",
+          name: "mapa",
+          placeholder: this.state.casa.mapa
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "form-group"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          className: "form-control btn btn-primary",
+          type: "submit",
+          value: "Guardar"
+        })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "modal-footer"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          className: "btn btn-secondary",
+          "data-dismiss": "modal"
+        }, "Close"))))));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null);
+      }
+    }
+  }]);
+
+  return Terreno;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CatalogoAdmin/Casa/TerrenoListImg.jsx":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/CatalogoAdmin/Casa/TerrenoListImg.jsx ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _TerrenoImg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TerrenoImg */ "./resources/js/components/CatalogoAdmin/Casa/TerrenoImg.jsx");
+
+
+
+var CasaList = function CasaList(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    width: "100%",
+    className: "table table-striped table-bordered table-hover",
+    id: "dataTables-example"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Casa"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Descripcion"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Precio"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Accion"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, props.casas.map(function (casas) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TerrenoImg__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: casas.id,
+      id: casas.id,
+      casa: casas.casa,
+      imaprimera: casas.imaprimera,
+      imasegunda: casas.imasegunda,
+      imatercera: casas.imatercera,
+      mapa: casas.mapa
+    });
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CasaList);
+
+/***/ }),
+
 /***/ "./resources/js/components/CatalogoAdmin/CatalogoAdminApi.jsx":
 /*!********************************************************************!*\
   !*** ./resources/js/components/CatalogoAdmin/CatalogoAdminApi.jsx ***!
@@ -77333,6 +77683,8 @@ function (_Component) {
       contadorplantaciones: 0,
       contadorindustriales: 0,
       contadorcampos: 0,
+      contadorlotes: 0,
+      contadorfundos: 0,
       contadorcasas: 0,
       contadordcasas: 0,
       contadorvcasas: 0,
@@ -77404,6 +77756,18 @@ function (_Component) {
         _this2.setState({
           contadorcampos: contadorcampos
         });
+      }), axios.get("/ControlAdmin/TerrenoLotes").then(function (res) {
+        var contadorlotes = res.data;
+
+        _this2.setState({
+          contadorlotes: contadorlotes
+        });
+      }), axios.get("/ControlAdmin/TerrenoFundos").then(function (res) {
+        var contadorfundos = res.data;
+
+        _this2.setState({
+          contadorfundos: contadorfundos
+        });
       }), axios.get("/ControlAdmin/TerrenoDContador").then(function (res) {
         var contadordterrenos = res.data;
 
@@ -77448,7 +77812,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "col-sm-12"
       }, "Secci\xF3n de Terrenos"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-totales mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77458,7 +77822,7 @@ function (_Component) {
       }, "Total de Propiedades")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorterrenos)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-sitios mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77468,7 +77832,7 @@ function (_Component) {
       }, "Sitios")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorsitios)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-parcelas mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77478,7 +77842,7 @@ function (_Component) {
       }, "Parcelas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorparcelas)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-plataciones mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77488,7 +77852,7 @@ function (_Component) {
       }, "Plantaciones")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorplantaciones)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-industriales mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77498,7 +77862,7 @@ function (_Component) {
       }, "Industriales")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorindustriales)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-campos mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77508,7 +77872,27 @@ function (_Component) {
       }, "Campos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorcampos)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card text-white bg-lotes mb-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "card-title"
+      }, "Lotes")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorlotes)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-12 col-md-12 col-lg-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card text-white bg-fundos mb-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "card-title"
+      }, "Fundos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorfundos)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-disponibles mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77518,7 +77902,7 @@ function (_Component) {
       }, "Terrenos Disponibles")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadordterrenos)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-vendidos mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77530,7 +77914,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorvterrenos)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "col-sm-12"
       }, "Secci\xF3n de Casas"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-casas mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77540,7 +77924,7 @@ function (_Component) {
       }, "Casas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorcasas)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-dcasas mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77550,7 +77934,7 @@ function (_Component) {
       }, "Casas Disponibles")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadordcasas)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-vcasas mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77560,7 +77944,7 @@ function (_Component) {
       }, "Casas Vendidas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorvcasas)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-danger mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77570,7 +77954,7 @@ function (_Component) {
       }, "Zonas Registradas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorregiones)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-provincias mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77580,7 +77964,7 @@ function (_Component) {
       }, "Provincias Registradas")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.contadorprovincias)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-12 col-md-12 col-lg-6"
+        className: "col-sm-12 col-md-12 col-lg-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card text-white bg-comunas mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {

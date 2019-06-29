@@ -20,6 +20,7 @@ import TerrenoApi from './CatalogoAdmin/Terreno/TerrenoAdminApp';
 import CasaApi from './CatalogoAdmin/Casa/CasaAdminApp';
 import TerrenoEdit from './CatalogoAdmin/Terreno/TerrenoDetalles';
 import TerrenoEditImg from './CatalogoAdmin/Terreno/TerrenImg';
+import CasaEditImg from './CatalogoAdmin/Casa/TerrenImg';
 import CasaEdit from './CatalogoAdmin/Casa/CasaDetalles';
 import TerrenoEditRegiones from './CatalogoAdmin/Terreno/TerrenoDetallesRegion';
 import CasaEditRegiones from './CatalogoAdmin/Casa/CasaRegionDetalles';
@@ -97,7 +98,8 @@ export default class Admin extends Component {
                 <Route path='/ControlAdmin/Casa' exact component={CasaApi} />
                 <Route path='/ControlAdmin/Terreno/Editar' exact component={TerrenoEdit} /> 
                 <Route path='/ControlAdmin/Casa/Editar' exact component={CasaEdit} />
-                <Route path='/ControlAdmin/Terreno/EditarImg' exact component={TerrenoEditImg} />  
+                <Route path='/ControlAdmin/Terreno/EditarImg' exact component={TerrenoEditImg} /> 
+                <Route path='/ControlAdmin/Casa/EditarImg' exact component={CasaEditImg} />  
                 <Route path='/ControlAdmin/Terreno/EditarRegiones' exact component={TerrenoEditRegiones} />
                 <Route path='/ControlAdmin/Casa/EditarRegiones' exact component={CasaEditRegiones} />   
                 <Route path='/ControlAdmin/Region' exact component={RegionApi} /> 

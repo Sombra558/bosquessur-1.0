@@ -33,7 +33,7 @@
             
                     <ul class="list-group">
                             <li class="list-group-item">
-                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-object-group col"></i> DESCRIPCION:</span>
+                                    <div><span style="font-size: 15px; color: #222; font-weight:bold;"><i class="fas fa-object-group col"></i> DESCRIPCION:</span>
                                     </div>
                                     <p class="text-justify" style="font-size:15px;">{{$casa->descripcion}}</p>
                             </li>
@@ -46,16 +46,16 @@
                                     </div> 
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">ZONA: {{$casa->zona}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">ZONA:</span><span style="font-size:15px; margin-left:10px;">{{$casa->zona}}</span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PROVINCIA: {{$casa->provincia}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">PROVINCIA:</span><span style="font-size:15px; margin-left:10px;">{{$casa->provincia}}</span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">COMUNA: {{$casa->comuna}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">COMUNA:</span><span style="font-size:15px; margin-left:10px;">{{$casa->comuna}}</span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PRECIO: {{$casa->precio}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">PRECIO:</span><span style="font-size:15px; margin-left:10px;">{{$casa->precio}}</span></div>
                             </li>
                            
                     </ul>
@@ -74,7 +74,7 @@
 
 </div>
 <div class="col-sm-8 well">
-        <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
+        <h5 style="margin-top: 5px; margin-bottom:25px;font-size:20px;">COORDENADAS DE UBICACIÓN</h5>
         <h5>UTM:{{$casa->utm}}</h5>
         <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span></span>LATITUD: {{$casa->latitud}}<span style="margin-left:35px;">LONGITUD: {{$casa->longitud}}</span></h5>
       </div>

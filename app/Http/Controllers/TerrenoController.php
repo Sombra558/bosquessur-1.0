@@ -56,6 +56,14 @@ class TerrenoController extends Controller
         $Plantaciones=Terreno::where('clasificacion','Plantaciones')->count();
         return $Plantaciones;      
       }
+      public function TerrenoLotes(){
+        $Lotes=Terreno::where('clasificacion','Lotes')->count();
+        return $Lotes;      
+      }
+      public function TerrenoFundos(){
+        $Fundos=Terreno::where('clasificacion','Fundos')->count();
+        return $Fundos;      
+      }
       public function TerrenoVContador(){
         $contadorV=Terreno::where('estado',1)->count();
         return $contadorV;      

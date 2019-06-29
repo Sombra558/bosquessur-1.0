@@ -66,6 +66,15 @@ class CasaController extends Controller
               ]);
            return;
         }
+        public function updateImagen(Request $request, $id){
+          Casa::find($id)->update([
+              'imaprimera' => request('imaprimera'),
+              'imasegunda' => request('imasegunda'),
+              'imatercera' => request('imatercera'),
+              'mapa' => request('mapa'),
+              ]);
+           return;
+          }
       public function index(){
         $casas = Casa::all(); 
         return $casas;

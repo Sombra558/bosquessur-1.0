@@ -32,30 +32,30 @@
             
                     <ul class="list-group">
                             <li class="list-group-item">
-                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-globe-americas col"></i> SUPERFICIE:<p style="font-size:15px" class="text-left">{{$terreno->superficie}}</p></span></div>
+                                    <div><span style="font-size: 15px; color: #222; font-weight:bold;"><i class="fas fa-globe-americas col"></i> SUPERFICIE:<p style="font-size:15px" class="text-left">{{$terreno->superficie}}</p></span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div><span style="font-size: 15px; color: #222;"><i class="fas fa-object-group col"></i> DESCRIPCION:</span>
+                                    <div><span style="font-size: 15px; color: #222; font-weight:bold;"><i class="fas fa-object-group col"></i> DESCRIPCION:</span>
                                     </div>
                                     <p class="text-justify" style="font-size:15px;">{{$terreno->descripcion}}</p>
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">ZONA: {{$terreno->zona}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">ZONA:</span><span style="font-size:15px; margin-left:10px;">{{$terreno->zona}}</span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PROVINCIA: {{$terreno->provincia}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">PROVINCIA:</span><span style="font-size:15px; margin-left:10px;">{{$terreno->provincia}}</span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">COMUNA: {{$terreno->comuna}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">COMUNA:</span><span style="font-size:15px; margin-left:10px;">{{$terreno->comuna}}</span></div>
                             </li>
                             <li class="list-group-item">
-                                    <div class="text-left"><span style="font-size: 15px; color: #222;">PRECIO: {{$terreno->precio}}</span></div>
+                                    <div class="text-left"><span style="font-size: 15px; color: #222; font-weight:bold;">PRECIO:</span><span style="font-size:15px; margin-left:10px;">{{$terreno->precio}}</span></div>
                             </li>
                     </ul>
                     <div class="main-menu">
                                 <ul class="nav navbar-nav" id="nav">
                                         <li  class="scroll">
-                                                <a class="btn btn-primary" data-section="#contact-area" href="#contact-area">Contactar</a>
+                                                <a style="padding-left: 50px; padding-right: 50px;" class="btn btn-primary" data-section="#contact-area" href="#contact-area">Contactar</a>
                                         </li>
                                 </ul>
                     </div>
@@ -67,7 +67,7 @@
 <br>
 </div>
 <div class="col-sm-8 well">
-        <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
+        <h5 style="margin-top: 5px; margin-bottom:25px; font-size:20px;">COORDENADAS DE UBICACIÓN</h5>
         <h5>UTM:{{$terreno->utm}}</h5>
         <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span>LATITUD: {{$terreno->latitud}}</span><span style="margin-left:35px;">LONGITUD: {{$terreno->longitud}}</span></h5>
       </div>

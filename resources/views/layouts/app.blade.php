@@ -77,6 +77,12 @@
     .bg-campos{
         background-color: #64075c;
     }
+    .bg-lotes{
+        background-color: #004ddd;
+    }
+    .bg-fundos{
+        background-color: #a1031d;
+    }
     .bg-industriales{
         background-color: #085d72;
     }
