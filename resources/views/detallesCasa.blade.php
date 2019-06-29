@@ -73,7 +73,7 @@
     
 
 </div>
-<div class="col-sm-8 well">
+<div style="margin-top:-35px;" class="col-sm-8 well">
         <h5 style="margin-top: 5px; margin-bottom:25px;font-size:20px;">COORDENADAS DE UBICACIÓN</h5>
         <h5>UTM:{{$casa->utm}}</h5>
         <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span></span>LATITUD: {{$casa->latitud}}<span style="margin-left:35px;">LONGITUD: {{$casa->longitud}}</span></h5>
