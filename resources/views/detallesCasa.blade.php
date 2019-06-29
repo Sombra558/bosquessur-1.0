@@ -12,19 +12,27 @@
     <br>
     <br>
     <div class="row">
-                <ul class="col-xs-12 col-sm-2 nav nav-tabs" role="tablist">
+                <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                <ul class="col-xs-12 col-sm-4 nav nav-tabs" role="tablist">
                         <li class="col-xs-3 col-sm-12" role="presentation"><a href="#potota" aria-controls="potota" role="tab" data-toggle="tab"><img  src="{{$casa->imaprimera}}" height="100%" width="100%" alt="Ver Imagen Principal"></a></li>
                         <li class="col-xs-3 col-sm-12" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><img  src="{{$casa->imasegunda}}" height="100%" width="100%" alt="Ver Imagen Secundaria"></a></li>
                         <li class="col-xs-3 col-sm-12" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><img  src="{{$casa->imatercera}}" height="100%" width="100%" alt="Ver Imagen Tercearia"></a></li>
                         <li class="col-xs-3 col-sm-12 text-center" role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><span class="text-map" style="color: red;"><i class="fas fa-map-marker-alt col"></i></span></a></li>
                 </ul>
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-8">
                     <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active" id="potota"><img src="{{$casa->imaprimera}}"  height="396px" width="100%" alt="Imagen Primera"></div>
                             <div role="tabpanel" class="tab-pane fade" id="profile"><img src="{{$casa->imasegunda}}"  height="396px" width="100%" alt="Imagen Secundaria"></div>
                             <div role="tabpanel" class="tab-pane fade" id="messages"><img src="{{$casa->imatercera}}"  height="396px" width="100%" alt="Imagen Tercearia"></div>
                             <div role="tabpanel" class="tab-pane fade" id="settings"> <iframe src="{{$casa->mapa}}" width="100%" height="396px" frameborder="0" style="border:0; margin:0px;padding:0px;" allowfullscreen></iframe></div>
                     </div>
+                    <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
+                    <h5>UTM:{{$casa->utm}}</h5>
+                    <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span></span>LATITUD: {{$casa->latitud}}<span style="margin-left:35px;">LONGITUD: {{$casa->longitud}}</span></h5>
+                </div>
+                </div>
+                
                 </div>
                 <div class="col-xs-12 col-sm-4">
                 <div class="col-xs-12 col-sm-12">
@@ -73,10 +81,6 @@
     
 
 </div>
-<div style="margin-top:-35px;" class="col-sm-8 well">
-        <h5 style="margin-top: 5px; margin-bottom:25px;font-size:20px;">COORDENADAS DE UBICACIÓN</h5>
-        <h5>UTM:{{$casa->utm}}</h5>
-        <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span></span>LATITUD: {{$casa->latitud}}<span style="margin-left:35px;">LONGITUD: {{$casa->longitud}}</span></h5>
-      </div>
+
 </div>
 @endsection
