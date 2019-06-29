@@ -27,7 +27,7 @@
                             <div role="tabpanel" class="tab-pane fade" id="messages"><img src="{{$casa->imatercera}}"  height="396px" width="100%" alt="Imagen Tercearia"></div>
                             <div role="tabpanel" class="tab-pane fade" id="settings"> <iframe src="{{$casa->mapa}}" width="100%" height="396px" frameborder="0" style="border:0; margin:0px;padding:0px;" allowfullscreen></iframe></div>
                     </div>
-                    <h5 style="margin-top: 5px; margin-bottom:25px;">COORDENADAS DE UBICACIÓN</h5>
+                    <h5 style="margin-top: 5px; margin-bottom:25px; font-size:18px;">COORDENADAS DE UBICACIÓN</h5>
                     <h5>UTM:{{$casa->utm}}</h5>
                     <h5 style="margin-top: 25px; margin-bottom:5px;" class="text-left"><span></span>LATITUD: {{$casa->latitud}}<span style="margin-left:35px;">LONGITUD: {{$casa->longitud}}</span></h5>
                 </div>
