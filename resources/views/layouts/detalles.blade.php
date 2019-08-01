@@ -90,6 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 <form action={{route('contact')}} method="POST" name="contact-form" class="wow fadeInDown">
+{{ csrf_field() }}
 <div class="col-lg-6 animated animate-from-left" style="opacity: 1; left: 0px;">
 <div class="form-group"><label for="name">Tu Nombre:</label> <input class="form-control" id="name" name="name" placeholder="Nombre" required="" type="text" /></div>
 
