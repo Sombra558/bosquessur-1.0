@@ -252,9 +252,10 @@
 <p class="text-center wow fadeInDown animated" style="visibility: visible;">Dejanos tu mensaje y nos contactaremos contigo a la brevedad</p>
 </div>
 
-<form action="enviacontacto.php" method="post" name="contact-form" class="wow fadeInDown">
+<form action={{route('contact')}} method="POST" name="contact-form" class="wow fadeInDown">
+{{ csrf_field() }}
 <div class="col-lg-6 animated animate-from-left" style="opacity: 1; left: 0px;">
-<div class="form-group"><label for="name">Tu Nombre:</label> <input class="form-control" id="name" name="nombre" placeholder="Nombre" required="" type="text" /></div>
+<div class="form-group"><label for="name">Tu Nombre:</label> <input class="form-control" id="name" name="name" placeholder="Nombre" required="" type="text" /></div>
 
 <div class="form-group"><label for="email">Correo:</label> <input class="form-control" id="email" name="email" placeholder="E-mail" required="" type="email" /></div>
 
@@ -262,7 +263,7 @@
 </div>
 
 <div class="col-lg-6 animated animate-from-right" style="opacity: 1; right: 0px;">
-<div class="form-group"><label for="message">Tu Mensaje:</label><textarea class="form-control" id="message" name="mensaje" placeholder="Escribe aquí" required="" rows="8"></textarea></div>
+<div class="form-group"><label for="message">Tu Mensaje:</label><textarea class="form-control" id="message" name="msg" placeholder="Escribe aquí" required="" rows="8"></textarea></div>
 </div>
 
 <div class="clearfix"></div>
