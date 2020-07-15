@@ -91,7 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<br>
 					<span class="">Correo:</span>
 					<br>
-                    <span class=""><a href="mailto:contacto@bosquessur.cl">contacto@bosquessur.cl</a></span>
+                    <span class=""><a href="mailto:contacto@bosquessur.cl">bosquessur@gmail.com</a></span>
 					<br/>
 					<br>
 					<span class="">Teléfonos:</span>
